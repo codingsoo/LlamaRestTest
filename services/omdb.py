@@ -7,7 +7,7 @@ class Counter:
         self.filename = os.environ.get('LOG_FILE', 'log-omdb.txt')
 
     def request(self, flow):
-        flow.request.query["apikey"] = "9cbead2"
+        flow.request.query["apikey"] = "TOKEN_HERE"
         with open(self.filename, "a") as f:
             f.write("========REQUEST========\n")
             f.write(flow.request.method + "\n")

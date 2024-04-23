@@ -53,6 +53,3 @@ cd $DEFAULT_DIR
 # Install YouTube Mock service
 cd $DEFAULT_DIR
 . ./java11.env && cd services/youtube && mvn clean install -DskipTests && mvn dependency:build-classpath -Dmdep.outputFile=cp.txt
-
-wget https://www.dropbox.com/scl/fi/43a2pudgjhab26ufoml7g/ex.gguf\?rlkey=ccxwvolzxqqo87b6geh170oi7\&dl=0
-wget https://www.dropbox.com/scl/fi/s1gyhgrzpst9refat21qd/ipd.gguf\?rlkey=74lx3nqzprnyhf3czpuqer0aa\&dl=0

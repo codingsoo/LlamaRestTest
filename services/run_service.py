@@ -34,7 +34,6 @@ def run_service(service_path, class_name, port_number):
 
 if __name__ == "__main__":
     name = sys.argv[1]
-    token = sys.argv[2]
     base = os.getcwd()
 
     cov = "-javaagent:" + base + "/../org.jacoco.agent-0.8.7-runtime.jar=destfile=jacoco"
@@ -71,13 +70,6 @@ if __name__ == "__main__":
     elif name == "rest-countries":
         subprocess.run("tmux new -d -s rest-countries-proxy 'LOG_FILE=log-rest-countries.txt mitmproxy --mode reverse:https://restcountries.com -p 9007 -s proxy.py'", shell=True)
     elif name == "spotify":
-        with open("spotify.py", "r") as file:
-            content = file.read()
-
-        content = content.replace("TOKEN_HERE", token)
-
-        with open("spotify.py", "w") as file:
-            file.write(content)
         subprocess.run("tmux new -d -s spotify-proxy 'LOG_FILE=log-spotify.txt mitmproxy --mode reverse:https://api.spotify.com -p 9008 -s spotify.py'", shell=True)
 #        subprocess.run("python3 ./spotify_setting.py " + token, shell=True)
     elif name == "youtube":
@@ -120,13 +112,6 @@ if __name__ == "__main__":
         subprocess.run(
             "tmux new -d -s rest-countries-proxy 'LOG_FILE=log-rest-countries.txt mitmproxy --mode reverse:https://restcountries.com -p 9007 -s proxy.py'",
             shell=True)
-        with open("spotify.py", "r") as file:
-            content = file.read()
-
-        content = content.replace("TOKEN_HERE", token)
-
-        with open("spotify.py", "w") as file:
-            file.write(content)
         subprocess.run(
             "tmux new -d -s spotify-proxy 'LOG_FILE=log-spotify.txt mitmproxy --mode reverse:https://api.spotify.com -p 9008 -s spotify.py'",
             shell=True)
