@@ -9,7 +9,7 @@ if __name__ == "__main__":
     name = sys.argv[1]
     service = sys.argv[2]
 
-    subprocess.run("cd services && python run_service.py all 1", shell=True)
+    subprocess.run("cd services && python run_service.py all", shell=True)
 
     current_path = os.getcwd()
     time.sleep(300)
@@ -109,6 +109,25 @@ if __name__ == "__main__":
             subprocess.run("tmux new -d -s arat8 'cd tool/arat/spotify && bash tool.sh'", shell=True)
         if service == "youtube":
             subprocess.run("tmux new -d -s arat9 'cd tool/arat/youtube && bash tool.sh'", shell=True)
+    elif name == "arat-nlp":
+        if service == "fdic":
+            subprocess.run("tmux new -d -s arat1 'cd tool/arat/fdic-nlp && bash tool.sh'", shell=True)
+        if service == "genome-nexus":
+            subprocess.run("tmux new -d -s arat2 'cd tool/arat/genome-nexus-nlp && bash tool.sh'", shell=True)
+        if service == "language-tool":
+            subprocess.run("tmux new -d -s arat3 'cd tool/arat/language-tool-nlp && bash tool.sh'", shell=True)
+        if service == "ocvn":
+            subprocess.run("tmux new -d -s arat4 'cd tool/arat/ocvn-nlp && bash tool.sh'", shell=True)
+        if service == "ohsome":
+            subprocess.run("tmux new -d -s arat5 'cd tool/arat/ohsome-nlp && bash tool.sh'", shell=True)
+        if service == "omdb":
+            subprocess.run("tmux new -d -s arat6 'cd tool/arat/omdb-nlp && bash tool.sh'", shell=True)
+        if service == "rest-countries":
+            subprocess.run("tmux new -d -s arat7 'cd tool/arat/rest-countries-nlp && bash tool.sh'", shell=True)
+        if service == "spotify":
+            subprocess.run("tmux new -d -s arat8 'cd tool/arat/spotify-nlp && bash tool.sh'", shell=True)
+        if service == "youtube":
+            subprocess.run("tmux new -d -s arat9 'cd tool/arat/youtube-nlp && bash tool.sh'", shell=True)
     elif name == "llamaresttest":
         if service == "fdic":
             subprocess.run("tmux new -d -s llama1 'cd tool/llama/fdic && bash tool.sh'", shell=True)
@@ -128,6 +147,44 @@ if __name__ == "__main__":
             subprocess.run("tmux new -d -s llama8 'cd tool/llama/spotify && bash tool.sh'", shell=True)
         if service == "youtube":
             subprocess.run("tmux new -d -s llama9 'cd tool/llama/youtube && bash tool.sh'", shell=True)
+    elif name == "llamaresttest-ex":
+        if service == "fdic":
+            subprocess.run("tmux new -d -s llama1 'cd tool/llama2/fdic && bash tool.sh'", shell=True)
+        if service == "genome-nexus":
+            subprocess.run("tmux new -d -s llama2 'cd tool/llama2/genome-nexus && bash tool.sh'", shell=True)
+        if service == "language-tool":
+            subprocess.run("tmux new -d -s llama3 'cd tool/llama2/language-tool && bash tool.sh'", shell=True)
+        if service == "ocvn":
+            subprocess.run("tmux new -d -s llama4 'cd tool/llama2/ocvn && bash tool.sh'", shell=True)
+        if service == "ohsome":
+            subprocess.run("tmux new -d -s llama5 'cd tool/llama2/ohsome && bash tool.sh'", shell=True)
+        if service == "omdb":
+            subprocess.run("tmux new -d -s llama6 'cd tool/llama2/omdb && bash tool.sh'", shell=True)
+        if service == "rest-countries":
+            subprocess.run("tmux new -d -s llama7 'cd tool/llama2/rest-countries && bash tool.sh'", shell=True)
+        if service == "spotify":
+            subprocess.run("tmux new -d -s llama8 'cd tool/llama2/spotify && bash tool.sh'", shell=True)
+        if service == "youtube":
+            subprocess.run("tmux new -d -s llama9 'cd tool/llama2/youtube && bash tool.sh'", shell=True)
+    elif name == "llamaresttest-ipd":
+        if service == "fdic":
+            subprocess.run("tmux new -d -s llama1 'cd tool/llama3/fdic && bash tool.sh'", shell=True)
+        if service == "genome-nexus":
+            subprocess.run("tmux new -d -s llama2 'cd tool/llama3/genome-nexus && bash tool.sh'", shell=True)
+        if service == "language-tool":
+            subprocess.run("tmux new -d -s llama3 'cd tool/llama3/language-tool && bash tool.sh'", shell=True)
+        if service == "ocvn":
+            subprocess.run("tmux new -d -s llama4 'cd tool/llama3/ocvn && bash tool.sh'", shell=True)
+        if service == "ohsome":
+            subprocess.run("tmux new -d -s llama5 'cd tool/llama3/ohsome && bash tool.sh'", shell=True)
+        if service == "omdb":
+            subprocess.run("tmux new -d -s llama6 'cd tool/llama3/omdb && bash tool.sh'", shell=True)
+        if service == "rest-countries":
+            subprocess.run("tmux new -d -s llama7 'cd tool/llama3/rest-countries && bash tool.sh'", shell=True)
+        if service == "spotify":
+            subprocess.run("tmux new -d -s llama8 'cd tool/llama3/spotify && bash tool.sh'", shell=True)
+        if service == "youtube":
+            subprocess.run("tmux new -d -s llama9 'cd tool/llama3/youtube && bash tool.sh'", shell=True)
 
     time.sleep(3600)
     subprocess.run("tmux kill-server", shell=True)

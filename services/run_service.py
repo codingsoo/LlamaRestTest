@@ -71,7 +71,6 @@ if __name__ == "__main__":
         subprocess.run("tmux new -d -s rest-countries-proxy 'LOG_FILE=log-rest-countries.txt mitmproxy --mode reverse:https://restcountries.com -p 9007 -s proxy.py'", shell=True)
     elif name == "spotify":
         subprocess.run("tmux new -d -s spotify-proxy 'LOG_FILE=log-spotify.txt mitmproxy --mode reverse:https://api.spotify.com -p 9008 -s spotify.py'", shell=True)
-#        subprocess.run("python3 ./spotify_setting.py " + token, shell=True)
     elif name == "youtube":
         run_service("youtube", "youtube.api.Application", "9009")
         subprocess.run(
@@ -115,7 +114,6 @@ if __name__ == "__main__":
         subprocess.run(
             "tmux new -d -s spotify-proxy 'LOG_FILE=log-spotify.txt mitmproxy --mode reverse:https://api.spotify.com -p 9008 -s spotify.py'",
             shell=True)
-#        subprocess.run("python3 ./spotify_setting.py " + token, shell=True)
         run_service("youtube", "youtube.api.Application", "9009")
         subprocess.run(
             "tmux new -d -s youtube-proxy 'LOG_FILE=log-youtube.txt mitmproxy --mode reverse:http://0.0.0.0:8080 -p 9009 -s proxy.py'",
