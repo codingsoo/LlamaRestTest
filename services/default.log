@@ -1,0 +1,172 @@
+========REQUEST========
+GET
+https://omdbapi.com/?apikey=9cbead2
+
+========RESPONSE========
+1701888982.461726
+200
+{"Response":"False","Error":"Incorrect IMDb ID."}
+========REQUEST========
+POST
+https://api.spotify.com/v1/users/0e8/playlists
+collaborative=true&name=%22Best+Playlist+Ever%22&public=false
+========RESPONSE========
+1701890475.18399
+401
+{
+  "error": {
+    "status": 401,
+    "message": "No token provided"
+  }
+}
+========REQUEST========
+GET
+https://api.spotify.com/v1/me
+
+========RESPONSE========
+1701890475.272442
+401
+{
+  "error": {
+    "status": 401,
+    "message": "No token provided"
+  }
+}
+========REQUEST========
+GET
+https://api.spotify.com/v1/users/MCP5/playlists
+
+========RESPONSE========
+1701890475.326876
+401
+{
+  "error": {
+    "status": 401,
+    "message": "No token provided"
+  }
+}
+========REQUEST========
+GET
+https://api.spotify.com/v1/me/playlists
+
+========RESPONSE========
+1701890475.371217
+401
+{
+  "error": {
+    "status": 401,
+    "message": "No token provided"
+  }
+}
+========REQUEST========
+GET
+https://api.spotify.com/v1/playlists/Lz
+
+========RESPONSE========
+1701890475.436467
+401
+{
+  "error": {
+    "status": 401,
+    "message": "No token provided"
+  }
+}
+========REQUEST========
+PUT
+https://api.spotify.com/v1/playlists/htIxGtZ7u
+
+========RESPONSE========
+1701890475.480428
+401
+{
+  "error": {
+    "status": 401,
+    "message": "No token provided"
+  }
+}
+========REQUEST========
+GET
+https://api.spotify.com/v1/playlists/kd242c/images
+
+========RESPONSE========
+1701890475.521573
+401
+{
+  "error": {
+    "status": 401,
+    "message": "No token provided"
+  }
+}
+========REQUEST========
+GET
+https://api.spotify.com/v1/playlists/K8N3/tracks
+
+========RESPONSE========
+1701890475.563665
+401
+{
+  "error": {
+    "status": 401,
+    "message": "No token provided"
+  }
+}
+========REQUEST========
+POST
+https://api.spotify.com/v1/playlists/PPzZRGtXNZ/tracks
+
+========RESPONSE========
+1701890475.609635
+401
+{
+  "error": {
+    "status": 401,
+    "message": "No token provided"
+  }
+}
+========REQUEST========
+PUT
+https://api.spotify.com/v1/playlists/pI3QYpF/tracks
+
+========RESPONSE========
+1701890475.652328
+401
+{
+  "error": {
+    "status": 401,
+    "message": "No token provided"
+  }
+}
+========REQUEST========
+DELETE
+https://api.spotify.com/v1/playlists/m6XQ/tracks
+tracks=%7B+%22tracks%22%3A+%5B%7B+%22uri%22%3A+%22spotify%3Atrack%3A1Bc1f2XvXf6Ej3F6f9lk7R%22+%7D%2C%7B+%22uri%22%3A+%22spotify%3Atrack%3A2CdH8Xs3GF2jxRk8UOg5y3%22+%7D%5D+%7D
+========RESPONSE========
+1701890475.691635
+401
+{
+  "error": {
+    "status": 401,
+    "message": "No token provided"
+  }
+}
+========REQUEST========
+GET
+https://api.spotify.com/v1/search?q=roadhouse%20blues&type=episode
+
+========RESPONSE========
+1701890475.739445
+401
+{
+  "error": {
+    "status": 401,
+    "message": "No token provided"
+  }
+}
+========REQUEST========
+GET
+https://omdbapi.com/?apikey=9cbead2
+
+========RESPONSE========
+1702004758.031295
+200
+{"Response":"False","Error":"Incorrect IMDb ID."}

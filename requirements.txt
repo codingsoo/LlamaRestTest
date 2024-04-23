@@ -1,0 +1,6 @@
+prance~=23.6.21.0
+openapi-spec-validator==0.7.1
+openai~=0.28.0
+requests~=2.31.0
+rstr~=3.2.2
+llama-cpp-python~=0.2.56
