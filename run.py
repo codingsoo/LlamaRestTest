@@ -74,7 +74,7 @@ if __name__ == "__main__":
         subprocess.run("tmux new -d -s gpt7 'cd tool/resttestgpt/rest-countries && bash tool.sh'", shell=True)
         subprocess.run("tmux new -d -s gpt8 'cd tool/resttestgpt/spotify && bash tool.sh'", shell=True)
         subprocess.run("tmux new -d -s gpt9 'cd tool/resttestgpt/youtube && bash tool.sh'", shell=True)
-    elif name == "llama" or name == "7":
+    elif name == "llamaresttest" or name == "7":
         subprocess.run("tmux new -d -s llama1 'cd tool/llama/fdic && bash tool.sh'", shell=True)
         subprocess.run("tmux new -d -s llama2 'cd tool/llama/genome-nexus && bash tool.sh'", shell=True)
         subprocess.run("tmux new -d -s llama3 'cd tool/llama/language-tool && bash tool.sh'", shell=True)
