@@ -29,8 +29,8 @@ Our experiments were conducted on M1 MacBook Pro running Sonoma 14.4.1 with 64GB
 ### Download LlamaREST-EX and LlamaREST-IPD
 
 Download these two SLMs (Small Language Models) in the root project directory.
-- Download LlamaREST-EX ([2B](https://drive.google.com/file/d/1wNbLSnI85jCiwOwYjwUmoH3ZrnVpv-ne/view?usp=sharing), [4B](https://drive.google.com/file/d/1y478aEulrICa6xrL9ojgAGBRFzMzLSV_/view?usp=sharing), [8B](https://drive.google.com/file/d/1GtAZD115FEEVnPKC1M2BYhrJpg1dKx_c/view?usp=sharing), [16B](https://drive.google.com/file/d/18geN_rmLI6EpNo1IhHZhW3lYaLUCRnxK/view?usp=sharing))
-- Download LlamaREST-IPD ([2B](https://drive.google.com/file/d/1X3yRZ9urjY2qhqqQLJXk7-fm1CI4145q/view?usp=sharing), [4B](https://drive.google.com/file/d/1G16vQtvg1dZfVPoxMCq9ifm73NQCnOqJ/view?usp=sharing), [8B](https://drive.google.com/file/d/1xVm--UmUXuns7LRbm5Bvdhx5ZCMQ_Uaz/view?usp=sharing), [16B](https://drive.google.com/file/d/18Jraekj5_M-CZ9B9PtEfMPdvcJwhJqVx/view?usp=sharing))
+- Download LlamaREST-EX ([2B](https://huggingface.co/codingsoo/LlamaREST-EX-GGUF/resolve/main/LlamaREST-EX-2B.gguf), [4B](https://huggingface.co/codingsoo/LlamaREST-EX-GGUF/resolve/main/LlamaREST-EX-4B.gguf), [8B](https://huggingface.co/codingsoo/LlamaREST-EX-GGUF/resolve/main/LlamaREST-EX-8B.gguf)) from [Hugging Face](https://huggingface.co/codingsoo/LlamaREST-EX-GGUF)
+- Download LlamaREST-IPD ([2B](https://huggingface.co/codingsoo/LlamaREST-IPD-GGUF/resolve/main/LlamaREST-IPD-2B.gguf), [4B](https://huggingface.co/codingsoo/LlamaREST-IPD-GGUF/resolve/main/LlamaREST-IPD-4B.gguf), [8B](https://huggingface.co/codingsoo/LlamaREST-IPD-GGUF/resolve/main/LlamaREST-IPD-8B.gguf)) from [Hugging Face](https://huggingface.co/codingsoo/LlamaREST-IPD-GGUF)
 
 Also, you can simply run the script `LlamaREST_EX.py` and `LlamaREST_IPD.py` to generate the LLMs! We used A100 GPU to run those.
 
